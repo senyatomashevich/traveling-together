@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путешествуем вместе: Открой Россию заново</title>
+    <link rel="icon" type="image/svg+xml" href="https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-7f7AxL7soAhH5oV+DPw82ZT99VbFpoTMyD5ScOCfzPdCNtgvinn2c0Wh2OLKYQI6hgkMB3BH1p0+QvYHtvp7VA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header class="site-header" id="top">
+        <nav class="nav">
+            <div class="logo">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <span>Путешествуем вместе</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#cities">Города России</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn-primary btn-small" onclick="scrollToSection('contacts')">Связаться со мной</button>
+            </div>
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#top">Главная</a>
+            <a href="#cities">Города России</a>
+            <a href="#reviews">Отзывы</a>
+            <a href="#contacts">Контакты</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <p class="eyebrow">Открой для себя Россию</p>
+                <h1>Путешествуем вместе по России</h1>
+                <p class="subtitle">Открой для себя красоту родной страны — от величия столиц до тихих уголков Золотого кольца.</p>
+                <div class="hero-actions">
+                    <button class="btn-primary" onclick="scrollToSection('cities')">Выбрать маршрут</button>
+                    <button class="btn-secondary" onclick="scrollToSection('golden-ring')">Золотое кольцо</button>
+                </div>
+                <div class="hero-stats">
+                    <div>
+                        <strong>150+</strong>
+                        <span>Авторских маршрутов</span>
+                    </div>
+                    <div>
+                        <strong>15 000</strong>
+                        <span>Довольных путешественников</span>
+                    </div>
+                    <div>
+                        <strong>24/7</strong>
+                        <span>Поддержка в пути</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cities section" id="cities">
+            <div class="section-header">
+                <p class="eyebrow">Куда поехать</p>
+                <h2>Популярные города России</h2>
+                <p>Выбирайте направление и отправляйтесь в путешествие мечты с экспертами, которые знают страну изнутри.</p>
+            </div>
+            <div class="city-grid">
+                <article class="city-card">
+                    <img src="img/msk.jpg" alt="Москва">
+                    <div class="city-body">
+                        <div class="city-top">
+                            <h3>Москва</h3>
+                            <span class="tag">Столица страны</span>
+                        </div>
+                        <p>Красная площадь, Кремль и десятки музеев придают столице особый ритм и масштаб. Контраст старинных переулков и футуристичных кварталов вдохновляет каждого гостя.</p>
+                        <ul class="city-meta">
+                            <li><i class="fa-regular fa-calendar"></i><span>Лучшее время: май–сентябрь</span></li>
+                            <li><i class="fa-solid fa-ruble-sign"></i><span>Средняя стоимость: 95 000 ₽ / 7 дней</span></li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="city-card">
+                    <img src="img/main1.jpg" alt="Санкт-Петербург">
+                    <div class="city-body">
+                        <div class="city-top">
+                            <h3>Санкт-Петербург</h3>
+                             <span class="tag tag-red">Культурная столица</span>
+                        </div>
+                        <p>Эрмитаж, разводные мосты и белые ночи создают ту самую магию Северной Венеции. Город вдохновляет романтикой каналов и дворцов.</p>
+                        <ul class="city-meta">
+                            <li><i class="fa-regular fa-calendar"></i><span>Лучшее время: июнь–август</span></li>
+                            <li><i class="fa-solid fa-ruble-sign"></i><span>Средняя стоимость: 88 000 ₽ / 7 дней</span></li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="city-card">
+                    <img src= "img/kazan2.jpg" alt="Казань">
+                    <div class="city-body">
+                        <div class="city-top">
+                            <h3>Казань</h3>
+                            <span class="tag tag-sand">Смесь культур</span>
+                        </div>
+                        <p>Город на Волге, где минареты соседствуют с православными храмами, а татарская кухня открывает новые вкусы. Казанский кремль и Чаша — символы современности.</p>
+                        <ul class="city-meta">
+                            <li><i class="fa-regular fa-calendar"></i><span>Лучшее время: май–октябрь</span></li>
+                            <li><i class="fa-solid fa-ruble-sign"></i><span>Средняя стоимость: 72 000 ₽ / 7 дней</span></li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="city-card">
+                    <img src= "img/sochi.jpg" alt="Сочи">
+                    <div class="city-body">
+                        <div class="city-top">
+                            <h3>Сочи</h3>
+                            <span class="tag tag-blue">Курорт</span>
+                        </div>
+                        <p>Черноморские пляжи, Кавказские горы и олимпийское наследие. Здесь можно утром кататься в горах, а вечером гулять вдоль моря.</p>
+                        <ul class="city-meta">
+                            <li><i class="fa-regular fa-calendar"></i><span>Лучшее время: апрель–октябрь</span></li>
+                            <li><i class="fa-solid fa-ruble-sign"></i><span>Средняя стоимость: 86 000 ₽ / 7 дней</span></li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="city-card">
+                    <img src= "img/ekar.jpg" alt="Екатеринбург">
+                    <div class="city-body">
+                        <div class="city-top">
+                            <h3>Екатеринбург</h3>
+                            <span class="tag">Урал</span>
+                        </div>
+                        <p>Город на границе Европы и Азии. Конструктивизм, уральский рок и близость природных парков делают Екатеринбург центром притяжения.</p>
+                        <ul class="city-meta">
+                            <li><i class="fa-regular fa-calendar"></i><span>Лучшее время: июнь–сентябрь</span></li>
+                            <li><i class="fa-solid fa-ruble-sign"></i><span>Средняя стоимость: 78 000 ₽ / 7 дней</span></li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="city-card">
+                    <img src= "img/vladivistok.jpg" alt="Владивосток">
+                    <div class="city-body">
+                        <div class="city-top">
+                            <h3>Владивосток</h3>
+                            <span class="tag tag-red">Дальний Восток</span>
+                        </div>
+                        <p>Мост на остров Русский, маяки и панорамы бухты Золотой Рог. Город открывает Азию и Тихий океан без перелёта за границу.</p>
+                        <ul class="city-meta">
+                            <li><i class="fa-regular fa-calendar"></i><span>Лучшее время: август–сентябрь</span></li>
+                            <li><i class="fa-solid fa-ruble-sign"></i><span>Средняя стоимость: 110 000 ₽ / 7 дней</span></li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="reviews section" id="reviews">
+            <div class="section-header">
+                <p class="eyebrow">Живые эмоции</p>
+                <h2>Отзывы путешественников</h2>
+            </div>
+            <div class="reviews-grid">
+                <article class="review-card">
+                    <div class="review-top">
+                        <img src="img/kirill.jpg" alt="Кирилл">
+                        <div>
+                            <h3>Кирилл</h3>
+                            <p>О Санкт-Петербурге</p>
+                        </div>
+                        <span class="rating">★★★★★</span>
+                    </div>
+                    <p>«Белые ночи — это волшебство. Команда помогла составить маршрут, чтобы увидеть разводные мосты, музеи и скрытые кофейни. Хотелось остаться ещё!»</p>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-top">
+                        <img src="img/denis.jpg" alt= "Денис">
+                        <div>
+                            <h3>Денис</h3>
+                            <p>О Сочи</p>
+                        </div>
+                        <span class="rating">★★★★★</span>
+                    </div>
+                    <p>«Сочетание гор и моря — идеальный отпуск. Маршрут продуман до мелочей, трансфер и экскурсии без задержек. Особенно понравились прогулки в Красной Поляне.»</p>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-top">
+                        <img src="img/dasha.jpg" alt="даша">
+                        <div>
+                            <h3>Даша</h3>
+                            <p>О Москве</p>
+                        </div>
+                        <span class="rating">★★★★★</span>
+                    </div>
+                    <p>«Влюбилась в столицу заново: гастротуры, прогулки по Яузе и атмосферные ночные экскурсии. Команда всегда была на связи, помогали с любым вопросом.»</p>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-top">
+                        <img src="img/kirill2.jpg" alt="Кирилл2">
+                        <div>
+                            <h3>Кирилл</h3>
+                            <p>О Владивостоке</p>
+                        </div>
+                        <span class="rating">★★★★☆</span>
+                    </div>
+                    <p>«Всегда мечтал увидеть Тихий океан. Маршрут включал маяки, морскую кухню и поездку по Русскому мосту. Природа впечатляет, но очень холодно - минус балл  за это.»</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="advantages section" id="advantages">
+            <div class="section-header">
+                <p class="eyebrow">Почему Россия</p>
+                <h2>Почему стоит путешествовать по России</h2>
+            </div>
+            <div class="adv-grid">
+                <article>
+                    <i class="fa-solid fa-passport"></i>
+                    <h3>Без виз</h3>
+                    <p>Не нужны визы и сложные документы — собирайтесь и езжайте.</p>
+                </article>
+                <article>
+                    <i class="fa-solid fa-mountain-sun"></i>
+                    <h3>Разнообразная природа</h3>
+                    <p>Горы, море, тайга и степи в пределах одной страны.</p>
+                </article>
+                <article>
+                    <i class="fa-solid fa-clapperboard"></i>
+                    <h3>Богатая культура</h3>
+                    <p>Исторические города, фестивали и гастрономия на любой вкус.</p>
+                </article>
+                <article>
+                    <i class="fa-solid fa-train"></i>
+                    <h3>Удобная логистика</h3>
+                    <p>Скоростные поезда и чартеры связывают даже удалённые уголки.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="golden-ring section" id="golden-ring">
+            <div class="ring-content">
+                <div>
+                    <p class="eyebrow">Маршрут недели</p>
+                    <p class="avtor">Авторский тур на 6 дней и 5 ночей, который знакомит с великими городами древней Руси. Мы совмещаем must-see достопримечательности и малоизвестные локации.</p>
+                    <ul class="ul">
+                        <li><strong>День 1:</strong> Москва → Сергиев Посад, Троице-Сергиева лавра.</li>
+                        <li><strong>День 2:</strong> Переславль-Залесский и прогулка по Плещееву озеру.</li>
+                        <li><strong>День 3:</strong> Ростов Великий, кремль и мастер-классы по эмали.</li>
+                        <li><strong>День 4:</strong> Ярославль и гастрономический тур.</li>
+                        <li><strong>День 5:</strong> Кострома и музей льна.</li>
+                        <li><strong>День 6:</strong> Ипатьевский монастырь, возвращение в Москву.</li>
+                    </ul>
+                    <div class="hero-actions">
+                        <a class="btn-primary" href="booking.html">Забронировать</a>
+                        <button class="btn-secondary" onclick="scrollToSection('cities')">Смотреть другие</button>
+                    </div>
+                </div>
+                <div class="ring-card">
+                    <h3>Детали тура</h3>
+                    <p> Продолжительность: 6 дней</p>
+                    <p> Транспорт: комфортабельный автобус</p>
+                    <p> Размещение: 4* отели</p>
+                    <p> Группа: до 18 человек</p>
+                    <p> Стоимость: от 79 000 ₽</p>
+                    <img src="img/gold-ring.jpg" alt="img">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contacts">
+        <div class="footer-grid">
+            <div>
+                <h3>Контакты</h3>
+                <p><i class="fa-solid fa-phone"></i> +7 (800) 600-20-24</p>
+                <p><i class="fa-solid fa-envelope"></i> travel@discover-russia.ru</p>
+                <div class="socials">
+                    <a href="https://vk.com/senya_tomashevich" aria-label="ВКонтакте"><i class="fa-brands fa-vk"><img src="img/vk.jpg" alt=""></i></a>
+                    <a href="https://t.me/senya_05_duet" aria-label="Telegram"><i class="fa-brands fa-telegram"><img src="img/tg.jpg"></i></a>
+                    <a href="https://mail.ru/" aria-label="YouTube"><i class="fa-brands fa-mail"><img src="img/mail.jpg"></i></a>
+                </div>
+            </div>
+            <div>
+                <h3>Подписка на новости</h3>
+                <p>Полезные советы, свежие маршруты и спецпредложения каждую неделю.</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Ваш email" required>
+                    <button type="submit" class="btn-primary">Подписаться</button>
+                </form>
+            </div>
+            <div>
+                <h3>Мы рядом</h3>
+                <p>Москва, Крондштадский бульвар 37б, 1<br>Работаем ежедневно с 10:00 до 21:00</p>
+            </div>
+        </div>
+        <p class="copyright">© 2025 Путешествуем вместе. Все права защищены.</p>
+    </footer>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        const scrollToSection = (id) => {
+            const target = document.getElementById(id);
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+                mobileMenu?.classList.remove('open');
+                burger?.classList.remove('open');
+            }
+        };
+
+        burger?.addEventListener('click', () => {
+            burger.classList.toggle('open');
+            mobileMenu.classList.toggle('open');
+
+        });
+
+        const navLinks = document.querySelectorAll('.nav-menu a, .mobile-menu a')
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                
+                const href = link.getAttribute('href')?.replace('#', '');
+                scrollToSection(href);
+
+                navLinks.forEach(link => link.classList.remove('active'));
+                event.target.classList.add('active');
+            });
+        });
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.15 }
+        );
+
+        document.querySelectorAll('.hero, .section, .footer').forEach(el => {
+            observer.observe(el);
+        });
+
+        const subscribeForm = document.querySelector('.subscribe-form');
+        const subscribeEmailInput = subscribeForm?.querySelector('input[type="email"]');
+
+        subscribeForm?.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const email = subscribeEmailInput?.value.trim();
+            if (!email) return;
+
+            alert('Вы подписались на новости, следите за почтовым ящиком.');
+            if (subscribeEmailInput) {
+                subscribeEmailInput.value = '';
+            }
+        });
+    </script>
+</body>
+</html>
