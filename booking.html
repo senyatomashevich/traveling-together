@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронирование тура — Путешествуем вместе</title>
+    <link rel="icon" type="image/svg+xml" href="https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-7f7AxL7soAhH5oV+DPw82ZT99VbFpoTMyD5ScOCfzPdCNtgvinn2c0Wh2OLKYQI6hgkMB3BH1p0+QvYHtvp7VA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header class="site-header" id="top">
+        <nav class="nav">
+            <div class="logo">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <span>Путешествуем вместе</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#cities">Города России</a></li>
+                <li><a href="index.html#golden-ring">Маршрут недели</a></li>
+                <li><a href="index.html#reviews">Отзывы</a></li>
+                <li><a href="index.html#contacts">Контакты</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a class="btn-secondary" href="index.html">На главную</a>
+            </div>
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html#cities">Города России</a>
+            <a href="index.html#golden-ring">Маршрут недели</a>
+            <a href="index.html#reviews">Отзывы</a>
+            <a href="index.html#contacts">Контакты</a>
+            <a href="index.html">Главная</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="booking hero" id="booking">
+            <div class="booking-wrapper">
+                <div class="booking-copy">
+                    <p class="eyebrow">Бронирование</p>
+                    <h1>Забронируйте путешествие мечты</h1>
+                    <p class="subtitle">Заполните форму — подберём удобные даты, транспорт и размещение, предложим готовый маршрут или соберём индивидуальный тур под ваш темп и бюджет.</p>
+                    <ul class="booking-list">
+                        <li>Подбор маршрута и отелей под ваш бюджет и стиль отдыха.</li>
+                        <li>Помощь с билетами, трансферами и экскурсиями без скрытых платежей.</li>
+                        <li>Поддержка 24/7 на протяжении всей поездки.</li>
+                    </ul>
+                    <div class="hero-actions" style="justify-content:flex-start;">
+                        <a class="btn-secondary" href="index.html#golden-ring">Вернуться к маршрутам</a>
+                    </div>
+                </div>
+
+                <div class="booking-card">
+                    <h3>Данные для брони</h3>
+                    <form id="booking-form" class="booking-form">
+                        <div class="form-grid">
+                            <div class="form-control">
+                                <label for="fullname">Имя и фамилия</label>
+                                <input id="fullname" name="fullname" type="text" placeholder="Например, Анна Иванова" required>
+                            </div>
+                            <div class="form-control">
+                                <label for="email">Email</label>
+                                <input id="email" name="email" type="email" placeholder="you@example.com" required>
+                            </div>
+                            <div class="form-control">
+                                <label for="phone">Телефон</label>
+                                <input id="phone" name="phone" type="tel" placeholder="+7 (999) 000-00-00" required>
+                            </div>
+                            <div class="form-control">
+                                <label for="destination">Город назначения</label>
+                                <input id="destination" name="destination" type="text" placeholder="Москва, Казань, Сочи..." required>
+                            </div>
+                        </div>
+
+                        <div class="booking-meta">
+                            <div class="form-control">
+                                <label for="start-date">Дата выезда</label>
+                                <input id="start-date" name="start-date" type="date" required>
+                            </div>
+                            <div class="form-control">
+                                <label for="end-date">Дата возвращения</label>
+                                <input id="end-date" name="end-date" type="date" required>
+                            </div>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-control">
+                                <label for="travelers">Количество путешественников</label>
+                                <input id="travelers" name="travelers" type="number" min="1" max="20" value="2" required>
+                            </div>
+                            <div class="form-control">
+                                <label for="comfort">Уровень размещения</label>
+                                <select id="comfort" name="comfort" required>
+                                    <option value="" disabled selected>Выберите вариант</option>
+                                    <option value="3*">3★ комфорт</option>
+                                    <option value="4*">4★ бизнес</option>
+                                    <option value="5*">5★ премиум</option>
+                                    <option value="apartment">Апартаменты</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="notes">Пожелания по маршруту</label>
+                            <textarea id="notes" name="notes" placeholder="Экскурсии, питание, особые требования..."></textarea>
+                        </div>
+
+                        <label class="checkbox-field">
+                            <input type="checkbox" required>
+                            <span>Согласен на обработку персональных данных и получение предложений.</span>
+                        </label>
+
+                        <button type="submit" class="btn-primary">Отправить заявку</button>
+                        <p class="booking-note">Мы свяжемся в течение 30 минут в рабочее время, подтвердим детали и закрепим бронь.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <h3>Контакты</h3>
+                <p><i class="fa-solid fa-phone"></i> +7 (800) 600-20-24</p>
+                <p><i class="fa-solid fa-envelope"></i> travel@discover-russia.ru</p>
+            </div>
+            <div>
+                <h3>Поддержка</h3>
+                <p>Мы на связи ежедневно с 10:00 до 21:00.</p>
+                <p>Отвечаем в мессенджерах и по email.</p>
+            </div>
+            <div>
+                <h3>Навигация</h3>
+                <p><a href="index.html#cities">Популярные города</a></p>
+                <p><a href="index.html#golden-ring">Маршрут недели</a></p>
+                <p><a href="index.html#contacts">Контакты</a></p>
+            </div>
+        </div>
+        <p class="copyright">© 2025 Путешествуем вместе. Все права защищены.</p>
+    </footer>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        burger?.addEventListener('click', () => {
+            burger.classList.toggle('open');
+            mobileMenu.classList.toggle('open');
+        });
+
+        const navLinks = document.querySelectorAll('.nav-menu a, .mobile-menu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.forEach(item => item.classList.remove('active'));
+                link.classList.add('active');
+                burger?.classList.remove('open');
+                mobileMenu?.classList.remove('open');
+            });
+        });
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.15 }
+        );
+
+        document.querySelectorAll('.booking, .footer').forEach(el => {
+            observer.observe(el);
+        });
+
+        const bookingForm = document.getElementById('booking-form');
+
+        bookingForm?.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const nameInput = document.getElementById('fullname');
+            const nameValue = nameInput && 'value' in nameInput ? nameInput.value.trim() : '';
+            alert(`Заявка отправлена${nameValue ? ', ' + nameValue : ''}! Мы свяжемся в ближайшее время.`);
+            bookingForm.reset();
+        });
+    </script>
+</body>
+</html>
+
